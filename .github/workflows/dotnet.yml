@@ -21,3 +21,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore     
+    - uses: actions/upload-artifact@main
+      with:
+        name: bb
+        path: public/      
